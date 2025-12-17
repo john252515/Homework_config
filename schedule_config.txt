@@ -1,0 +1,19 @@
+=begin
+Расписание занятий
+=end
+
+def GROUP := @"ИКБО-62-24"
+
+$[
+  group : ?{GROUP},
+  week : array(
+    $[
+      day : @"Monday",
+      subjects : array(@"Math", @"Programming")
+    ],
+    $[
+      day : @"Tuesday",
+      subjects : array(@"Physics", @"Databases")
+    ]
+  )
+]

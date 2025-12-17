@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<config><mode>auto</mode><rooms><item><name>LivingRoom</name><sensors><item><type>temperature</type><limit>26</limit></item><item><type>humidity</type><limit>56</limit></item></sensors></item><item><name>Bedroom</name><sensors><item><type>temperature</type><limit>24</limit></item></sensors></item></rooms></config>

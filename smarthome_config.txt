@@ -1,0 +1,34 @@
+=begin
+Система умного дома
+=end
+
+def MODE := @"auto"
+def MAX_TEMP := 0o32
+
+$[
+  mode : ?{MODE},
+  rooms : array(
+    $[
+      name : @"LivingRoom",
+      sensors : array(
+        $[
+          type : @"temperature",
+          limit : ?{MAX_TEMP}
+        ],
+        $[
+          type : @"humidity",
+          limit : 0o70
+        ]
+      )
+    ],
+    $[
+      name : @"Bedroom",
+      sensors : array(
+        $[
+          type : @"temperature",
+          limit : 0o30
+        ]
+      )
+    ]
+  )
+]

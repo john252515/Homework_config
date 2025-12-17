@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<config><host>localhost</host><port>493</port><modules><item>auth</item><item>cache</item><item>logging</item></modules><limits><max_connections>100</max_connections><timeout>10</timeout></limits></config>

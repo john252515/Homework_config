@@ -1,0 +1,16 @@
+=begin
+Конфигурация веб-сервера
+=end
+
+def PORT := 0o755
+def HOST := @"localhost"
+
+$[
+  host : ?{HOST},
+  port : ?{PORT},
+  modules : array(@"auth", @"cache", @"logging"),
+  limits : $[
+    max_connections : 0o144,
+    timeout : 0o12
+  ]
+]
